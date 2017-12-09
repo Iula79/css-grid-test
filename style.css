@@ -5,30 +5,46 @@ body {
 .container {
     display: grid;
     margin:0 auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    width:400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width:500px;
    
 }
 .column {
     display: flex;
     justify-content: center;
- 
+    height:60px;
+    align-items: center;
 }
 .ball {
-    width:50px;
-    height:50px;
+    width:45px;
+    height:45px;
+    margin:5px;
     border-radius: 50%;
     background-color:gray;  
 }
 .peg {
     width:30px;
     height:30px;
+    margin:15px;
     background-color:gray; 
-    align-self: center; 
+    align-self: center;
+    display:grid; 
+    border-radius: 5px;
+    grid-template-columns: 1fr 1fr;
 }
 .choice {
     background-color: brown;
 }
 .board {
     background-color: blue;
+}
+
+/* .empty {
+    width:50px;
+} */
+.pegpeg{
+    background-color:black;
+    border-radius:  10px;
+
+    margin:2px;
 }
